@@ -1,0 +1,46 @@
+{
+  "name": "jabis",
+  "version": "1.0.0",
+  "description": "JABIS - Just A Brilliant Intelligence System",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"electron .\"",
+    "build": "vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "electron": "^32.0.0",
+    "electron-builder": "^25.0.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2"
+  },
+  "build": {
+    "appId": "com.jabis.app",
+    "productName": "JABIS",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../backend",
+        "to": "backend"
+      }
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

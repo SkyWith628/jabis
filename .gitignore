@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+jabis.db
+node_modules/
+dist/
+dist-electron/
+backend/venv/
+backend/.venv/
+.venv/
+venv/
