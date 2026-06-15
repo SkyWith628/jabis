@@ -3,6 +3,8 @@
 
 > 아이언맨의 자비스에서 영감을 받은 AI 기반 개인 학습 비서
 
+📅 **개발 기간:** 2026.03
+
 ![JABIS Demo](https://img.shields.io/badge/status-active-brightgreen)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![React](https://img.shields.io/badge/React-18-61dafb)
